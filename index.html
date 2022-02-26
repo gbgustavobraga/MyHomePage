@@ -1,42 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Yy professional blog about programming.">
-    <title>Gustavo Braga - Devoloper</title>
-    <link rel="stylesheet" teype="text/css" href="style.css">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="assets/css/classes.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/elements.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
+
 <body>
-    <header class="header">
-        <img class="header-image"src="logo_braga.svg" alt="Braga Logo" width="100" height="100">
-        <nav class="header-menu">
-            <a class="header-menu-item">Contact</a>
-            <a class="header-menu-item">Projects</a>
-        </nav>
-    </header>
 
-    <main class="content">
-        <section class="main-content">
-            <div class="main-content-write">
-                <h1 class="main-content-write-title">Gustavo Braga</h1>
-                <h2 class="main-content-write-subtitle">Devoloper and WebDesing</h2>
-                <button class="main-content-button">Contact</button>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close Menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false;">
+                <a href="#home">
+                    <img src="assets/css/img/logo_escrita.svg" alt="LogoBragaEsctita" height="40">
+                </a>
+            </h1>
+            
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#specializations">Specializations</a></li>
+                    <li><a href="#work-dev">Works Dev</a></li>
+                    <li><a href="#work-desing">Works  Web Desing</a></li>
+                    <li><a href="#contact">Contact</a></li>  
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="menu-spacing"></div>
+
+    <section id="home" class="intro main-bg section">
+        <div class="main-content intro-content">   
+            <div class="intro-text-content">
+                <h2>Gustavo Braga</h2>
+                <p></p> Hi, my name is Gustavo Braga, I'm a developer and designer, I made this site to show my projects and works.</p>
+
             </div>
-            <img  class="main-content-image"src="logo_braga.svg" alt="Braga Logo" width="300" height="300">
-        </section>
-        <section class="content-secondary">
-            <h3 class="content-secondary-title">What am i?</h3>
-            <p class="content-secondary-subtitle">I'm a developer and web design</p>
-            <p class="content-secondary-subtitle">I'm from <strong>Brazil</strong>, and I'm studying more and more</p>
-        </section>
-    </main>
+            <div class="intro-img">
+                <img src="assets/css/img/logo_braga.svg" alt="logo braga menu pricipal">
+            </div>
+        </div>
+    </section>
 
-    <footer class="basebord">
-        <img class="basebord-image"src="logo_escrita.svg" width="600" height="600">
+    <section id="specializations" class="white-bg section">
+        <div class="main-content specializations-content">
+            <h2>
+                Specializations 
+            </h2>
+            <p> I have been studying programming since 2019, I started to study Python, I improved a lot,
+                I did many projects that I really enjoyed developing. During this period I also started working as a web designer.
+                Today I'm focused on learning web development.</p>
+            <br>
+            <p>Python</p>
+            <p>Html and Css</p>
+            <p>Java Script</p>
+            <p>MySql</p>
+            <p>Illustrator</p>
+            <p>Photoshop</p>
+            
+        </div>
+    </section>
+
+    <section id="works-dev" class=" works-dev main-bg section">
+        <div class="main-content works-dev-content">
+            <h2>Dev Portfolio</h2>
+            <br>
+            <h6>To see my projects as a developer go to my GitHub.</p>
+            <div class="image-git">
+                <img src="https://img.icons8.com/nolan/256/github.png"/>
+            </div>
+            <a href="https://github.com/gbgustavobraga">
+                <button  class="git-button">GitHub</button href="https://github.com/gbgustavobraga">
+            </a>
+        </div>        
+    </section>
+
+    <section id="work-desing" class="work-desing white-bg section">
+        <div class="main-content work-desing-content">
+            <h2>Web Desing Portfolio</h2>
+            <br>
+            <h6>To see my projects as a Web Desing go to my Portfolio Behance.</p>
+            <div class="image-behance">
+                <img src="assets/css/img/icon-behance.svg" height="180"/>
+            </div>
+            <a href="https://www.behance.net/gustavobraga16">
+                <button  class="behance-button">Behance</button href="https://github.com/gbgustavobraga">
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact main-bg section">
+        <div class="main-content intro-content">   
+
+              <div class="intro-img">
+                <img src="assets/css/img/logo_escrita_white.svg" alt="Logo de HTML, CSS e JS.">
+            </div>
+            <div class="contact-form">
+                <fieldsetpp class="form-grid">
+                    <legend>Contact me</legend>
+
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" 
+                        name="first-name" 
+                        id="first-name" placeholder=" Your first name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" 
+                        name="last-name" 
+                        id="last-name" placeholder=" Your last name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" 
+                        name="email" 
+                        id="email" placeholder="Your e-mail">
+                    </div>
+
+                    <div class="form-group full-widht">
+                        <label for="message">Send Message
+                        </label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea> 
+                    </div>
+                    
+                    <div class="form-group full-widht">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </section> 
+
+    <footer id="footer" class="footer white-bg">
+        <p><a rel="nofollow" target="_blank" href="https://beacons.page/otaviomiranda">Feito por Gustavo Braga.</a></p>
     </footer>
+    
+    <a class="back-to-top" href="#">➤</a>
 </body>
-
 </html>

@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    color: var(--white-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 5.5rem;
+}
+
+h3 {
+    font-size: 5.0rem;
+}
+
+h4 {
+    font-size: 4.5rem;
+}
+
+h5 {
+    font-size: 4.0rem;
+}
+
+h6 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 3.0rem;
+    margin-bottom: 3rem;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 3rem;
+}
